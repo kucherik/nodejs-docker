@@ -1,9 +1,7 @@
-ARG NODE_VERSION=8.15.0
-
-FROM library/node:${NODE_VERSION}-alpine
+FROM library/node:latest
 
 LABEL maintainer="Gerardo Junior <me@gerardo-junior.com>"
-LABEL url="https://github.com/gerardo-junior/nodejs-docker.git"
+LABEL url="https://github.com/kucherik/nodejs-docker.git"
 
 ENV USER 'node'
 ENV WORKDIR '/src'
